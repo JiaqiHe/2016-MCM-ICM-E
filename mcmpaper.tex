@@ -1,0 +1,67 @@
+%=====================导=======言==============================
+\documentclass[a4paper,11pt]{article}
+%======================Include Packages========================
+
+\usepackage[50042]{MCMthesis}  %队号在这里填写
+%\usepackage[175,nosheet]{MCMthesis}%这个参数形式可去掉summary sheet首页。
+\problem{E}  %选题
+%===============设置正文和数学字体=============================
+%有些字体需要安装一些字体文件，注意辨别。
+%我参照 MCM论文集的字体 使用如下宏包来定制字体。
+\usepackage{palatino}
+\usepackage{indentfirst}
+
+%设置段落之间的距离，若不需要删除或者注释掉即可。
+\setlength\parskip{.5\baselineskip}
+\renewcommand{\abstractname}{Summary}
+%\def\abstractname{Summary}%可修改摘要名称
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%$$$$$$$==正文开始==$$$$$$$%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%==========================论文标题===============================
+\title{Slaking Ukraine's Thirst for Water Based on BP Model}
+\author{\small  Team \# 50042 }
+\date{\today}
+%=================================================================
+%==================================================================
+\begin{document}
+%摘要需要放在maketitle之前才能保证运行正常
+%====================摘=======要===================================
+\begin{abstract}
+To address the water scarcity issue, we firstly establish water carrying capacity coupling model comprising of two sub-models. One is designed for simulation and prediction utilizing 3-level \textbf{BP}(Back Popagation) structure, the other is for comprehensive evaluation by integrating as much information as possible. We choose 13 indexes like \textit{total water resources amount, GDP, population} and so on. In this way the outcome can be transformed into an evaluation result by 5 levels. Then we utilize China's statistics to test our model and it is proved to be feasible for the absolute values of relative error are all within 1\%.
+
+Secondly, we choose Ukraine which was heavily exploited in 2002 to be our target. We use \textbf{PCA}(Principle Component Analysis) and select 8 indexes such as \textit{total withdrawal, GDP, population, wastewater, industrial use, hydroelectricity, agricultural use, municipalities use} to conduct dynamic comprehensive evaluations. SPSS 22 figures out two significant indicators based on data we gathered, namely, \textit{population and industry}. And the ranks of the final score F demonstrate that the overall trend is getting worse; however, situations started to bounce back from 2003 to 2005.
+
+Thirdly, for the sake of minimizing errors, we optimize our model to the new \textbf{TGB} model consisting of triple-inputs, grey model and BP model after we apply Ukraine data into our BP model to complete predictions. The improved TGB model is designed by us and can provide better and more accurate figures. Our prediction results show that Ukraine's water stress issue would continue to deteriorate if no measure was taken.
+
+Next, we propose to establish a desalination plant in southern coastal areas. To select the best cite for this construction, we use \textbf{AHP}(Analysis Hierarchy Process) method and finally choose Odessa considering four important criteria: \textit{geography, local technological level, benefits and profits, and investments}. Apart from all the mentioned work, we also use \textbf{fitting} to simulate a possible clean water curve produced by desalination. In order to quantize its validity, we simply take the quotient of the mean value of annual produced desalination water in 15 years and the mean value of annual total water withdrawal in 15 years, which comes out to be 49.03\%. This figure indicates that our intervention is effective. Last but not least, we evaluate our model in an objective way to help future work.
+
+\begin{keywords}
+water stress; Back Propagation; TGB; Grey Prediction; PCA; AHP
+\end{keywords}
+\end{abstract}
+
+\maketitle
+
+\pagestyle{empty}
+
+
+
+\newpage
+
+%==================================================================
+
+
+%====================生=成=目=录===================================
+%\tableofcontents                                                  %
+%\newpage
+\pagestyle{fancy}                                                 %
+%==================================================================
+\input{body.tex}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%===========THE END OF PAPER============%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

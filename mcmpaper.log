@@ -1,0 +1,755 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=latex 2016.1.29)  2 FEB 2016 09:05
+entering extended mode
+**mcmpaper.tex
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\mcmpaper.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for loaded.
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\size11.clo"
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\MCMthesis.sty
+Package: MCMthesis 2013/02/02 v5.0 MCM thesis
+
+MCMthesis for MCM Version 5.0
+("D:\Program Files\CTEX\MiKTeX\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: dvips.def on input line 225.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\dvips.def"
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\fancyhdr\fancyhdr.sty"
+\fancy@headwidth=\skip43
+\f@ncyO@elh=\skip44
+\f@ncyO@erh=\skip45
+\f@ncyO@olh=\skip46
+\f@ncyO@orh=\skip47
+\f@ncyO@elf=\skip48
+\f@ncyO@erf=\skip49
+\f@ncyO@olf=\skip50
+\f@ncyO@orf=\skip51
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\fancybox\fancybox.sty"
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box26
+\shadowsize=\dimen103
+\@Sbox=\box27
+\do@VerbBox=\toks14
+\the@fancyput=\toks15
+\this@fancyput=\toks16
+\EndVerbatimTokens=\toks17
+\Verbatim@Outfile=\write3
+\Verbatim@Infile=\read1
+) ("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+)
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\lastpage\lastpage.sty"
+Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\listings\listings.sty"
+\lst@mode=\count87
+\lst@gtempboxa=\box28
+\lst@token=\toks19
+\lst@length=\count88
+\lst@currlwidth=\dimen106
+\lst@column=\count89
+\lst@pos=\count90
+\lst@lostspace=\dimen107
+\lst@width=\dimen108
+\lst@newlines=\count91
+\lst@lineno=\count92
+\lst@maxwidth=\dimen109
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count93
+\lst@skipnumbers=\count94
+\lst@framebox=\box29
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\listings\listings.cfg"
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\appendix\appendix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count95
+\c@@ppsavesec=\count96
+\c@@ppsaveapp=\count97
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\paralist\paralist.sty"
+Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
+\pltopsep=\skip52
+\plpartopsep=\skip53
+\plitemsep=\skip54
+\plparsep=\skip55
+\pl@lab=\toks20
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\classes\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks21
+\thm@bodyfont=\toks22
+\thm@headfont=\toks23
+\thm@notefont=\toks24
+\thm@headpunct=\toks25
+\thm@preskip=\skip56
+\thm@postskip=\skip57
+\thm@headsep=\skip58
+\dth@everypar=\toks26
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks27
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip59
+
+For additional information on amsmath, use the `?' option.
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks28
+\ex@=\dimen110
+))
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen111
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box30
+\strutbox@=\box31
+\big@size=\dimen112
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip10
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks29
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks30
+\eqnshift@=\dimen113
+\alignsep@=\dimen114
+\tagshift@=\dimen115
+\tagwidth@=\dimen116
+\totwidth@=\dimen117
+\lineht@=\dimen118
+\@envbody=\toks31
+\multlinegap=\skip60
+\multlinetaggap=\skip61
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\bm.sty"
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\jknappen\mathrsfs.sty"
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup9
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip62
+\LTright=\skip63
+\LTpre=\skip64
+\LTpost=\skip65
+\LTchunksize=\count110
+\LTcapwidth=\dimen119
+\LT@head=\box32
+\LT@firsthead=\box33
+\LT@foot=\box34
+\LT@lastfoot=\box35
+\LT@cols=\count111
+\LT@rows=\count112
+\c@LT@tables=\count113
+\c@LT@chunks=\count114
+\LT@p@ftn=\toks33
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen120
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\hhline.sty"
+Package: hhline 1994/05/23 v2.03 Table rule package (DPC)
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\tabularx.sty"
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen121
+\extrarowheight=\dimen122
+\NC@list=\toks34
+\extratabsurround=\skip66
+\backup@length=\skip67
+)
+\TX@col@width=\dimen123
+\TX@old@table=\dimen124
+\TX@old@col=\dimen125
+\TX@target=\dimen126
+\TX@delta=\dimen127
+\TX@cols=\count115
+\TX@ftn=\toks35
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\flafter.sty"
+Package: flafter 2000/07/23 v1.2i Standard LaTeX floats after reference (FMi)
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\pifont.sty"
+Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
+LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\upzd.fd"
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\upsy.fd"
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count116
+\calc@Bcount=\count117
+\calc@Adimen=\dimen128
+\calc@Bdimen=\dimen129
+\calc@Askip=\skip68
+\calc@Bskip=\skip69
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count118
+\calc@Cskip=\skip70
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\colortbl\colortbl.sty"
+Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
+\everycr=\toks36
+\minrowclearance=\skip71
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen130
+\lightrulewidth=\dimen131
+\cmidrulewidth=\dimen132
+\belowrulesep=\dimen133
+\belowbottomsep=\dimen134
+\aboverulesep=\dimen135
+\abovetopsep=\dimen136
+\cmidrulesep=\dimen137
+\cmidrulekern=\dimen138
+\defaultaddspace=\dimen139
+\@cmidla=\count119
+\@cmidlb=\count120
+\@aboverulesep=\dimen140
+\@belowrulesep=\dimen141
+\@thisruleclass=\count121
+\@lastruleclass=\count122
+\@thisrulewidth=\dimen142
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("D:\Program Files\CTEX\MiKTeX\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count123
+\Gm@cntv=\count124
+\c@Gm@tempcnt=\count125
+\Gm@bindingoffset=\dimen143
+\Gm@wd@mp=\dimen144
+\Gm@odd@mp=\dimen145
+\Gm@even@mp=\dimen146
+\Gm@layoutwidth=\dimen147
+\Gm@layoutheight=\dimen148
+\Gm@layouthoffset=\dimen149
+\Gm@layoutvoffset=\dimen150
+\Gm@dimlist=\toks37
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\geometry\geometry.cfg"))
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+("D:\Program Files\CTEX\MiKTeX\tex\latex\bera\berasans.sty"
+Package: berasans 2004/01/30 (WaS)
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/02/06 v6.82o Hypertext links for LaTeX
+
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2011/04/23 v1.4 Bundle oberdiek, subset hyperref (HO)
+
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2011/04/23 v1.4 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2011/04/23 v1.4 Subsetting bundle oberdiek (HO)
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2011/02/16 v1.5 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2011/04/07 v1.13 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Defining keys (HO)
+Package: pdftexcmds 2011/04/22 v0.16 Utilities of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package: pdfescape 2011/04/04 v1.12 Provides string conversions (HO)
+Package: bigintcalc 2011/01/30 v1.2 Expandable big integer calculations (HO)
+Package: bitset 2011/01/30 v1.1 Data type bit set (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provides unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/01/30 v1.0 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/04/23 v1.7 Hooks at very end of document (HO)
+Package: atbegshi 2011/01/30 v1.15 At begin shipout hook (HO)
+Package: refcount 2010/12/01 v3.2 Data extraction from references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options of hyperref/bookmark (HO)
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2010/12/23 v3.10 Keyval support for LaTeX options (HO)
+)
+\@linkdim=\dimen151
+\Hy@linkcounter=\count126
+\Hy@pagecounter=\count127
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/02/06 v6.82o Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count128
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `CJKbookmarks' set `true' on input line 3925.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 3925
+.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 3925.
+Package hyperref Info: Option `colorlinks' set `true' on input line 3925.
+
+
+Package hyperref Warning: Invalid value `001'
+(hyperref)                for option `pdfborder'.
+(hyperref)                Option setting is ignored on input line 3925.
+
+
+Package hyperref Warning: Option `pagecolor' is not available anymore.
+
+Package hyperref Info: Hyper figures OFF on input line 4046.
+Package hyperref Info: Link nesting OFF on input line 4051.
+Package hyperref Info: Hyper index ON on input line 4054.
+Package hyperref Info: Plain pages OFF on input line 4061.
+Package hyperref Info: Backreferencing OFF on input line 4066.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4284.
+\c@Hy@tempcnt=\count129
+("D:\Program Files\CTEX\MiKTeX\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4637.
+\Fld@menulength=\count130
+\Field@Width=\dimen152
+\Fld@charsize=\dimen153
+Package hyperref Info: Hyper figures OFF on input line 5757.
+Package hyperref Info: Link nesting OFF on input line 5762.
+Package hyperref Info: Hyper index ON on input line 5765.
+Package hyperref Info: backreferencing OFF on input line 5772.
+Package hyperref Info: Link coloring ON on input line 5775.
+Package hyperref Info: Link coloring with OCG OFF on input line 5782.
+Package hyperref Info: PDF/A mode OFF on input line 5787.
+LaTeX Info: Redefining \ref on input line 5827.
+LaTeX Info: Redefining \pageref on input line 5831.
+\Hy@abspage=\count131
+\c@Item=\count132
+\c@Hfootnote=\count133
+)
+
+Package hyperref Message: Driver: hdvipdfm.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\hdvipdfm.def"
+File: hdvipdfm.def 2012/02/06 v6.82o Hyperref driver for dvipdfm
+\pdfm@box=\box36
+\c@Hy@AnnotLevel=\count134
+\HyField@AnnotCount=\count135
+\Fld@listcount=\count136
+\c@bookmark@seq@number=\count137
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip72
+)
+\@abstract=\box37
+\@keywords=\box38
+\c@Theorem=\count138
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+))
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\palatino.sty"
+Package: palatino 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+("D:\Program Files\CTEX\MiKTeX\tex\latex\tools\indentfirst.sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\mcmpaper.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 29.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\t1ppl.fd"
+File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 29.
+\c@lstlisting=\count139
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=50.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\AtBeginShipoutBox=\box39
+Package hyperref Info: Link coloring ON on input line 29.
+("D:\Program Files\CTEX\MiKTeX\tex\latex\hyperref\nameref.sty"
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+("D:\Program Files\CTEX\MiKTeX\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count140
+)
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
+
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\mcmpaper.out)
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\mcmpaper.out)
+\@outlinefile=\write4
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 33.
+LaTeX Font Info:    Try loading font information for T1+fvs on input line 47.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\bera\t1fvs.fd"
+File: t1fvs.fd 2004/09/07 scalable font definitions for T1/fvs.
+)
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 9.85492pt on input line 47.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\umsa.fd")
+("D:\Program Files\CTEX\MiKTeX\tex\latex\amsfonts\umsb.fd")
+("D:\Program Files\CTEX\MiKTeX\tex\latex\jknappen\ursfs.fd")
+("D:\Program Files\CTEX\MiKTeX\tex\latex\base\ulasy.fd")
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 34.19977pt on input line 47.
+LaTeX Font Info:    Font shape `T1/fvs/bx/n' in size <38> not available
+(Font)              Font shape `T1/fvs/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 34.19977pt on input line 47.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 17.99988pt on input line 47.
+LaTeX Font Info:    Font shape `T1/fvs/bx/n' in size <20> not available
+(Font)              Font shape `T1/fvs/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 17.99988pt on input line 47.
+LaTeX Font Info:    Font shape `T1/fvs/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/fvs/b/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `T1/fvs/b/n' will be
+(Font)              scaled to size 9.85492pt on input line 47.
+LaTeX Font Info:    Font shape `T1/fvs/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 47.
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 47.
+ [1
+
+]
+Overfull \hbox (87.47273pt too wide) in paragraph at lines 47--47
+ \T1/ppl/b/n/10.95 Key Word-s: [] 
+ []
+
+[2] (C:\Users\佳琪\Desktop\MCMTemplate5.01\body.tex
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 3.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 16.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\omsppl.fd"
+File: omsppl.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 16.
+ [3]
+File: ./picture/structure.eps Graphic file (type eps)
+
+<./picture/structure.eps>
+File: ./picture/BP.eps Graphic file (type eps)
+ <./picture/BP.eps>
+File: ./picture/System.eps Graphic file (type eps)
+ <./picture/System.eps> [4]
+Overfull \hbox (4.67542pt too wide) in paragraph at lines 92--130
+ [][][][] 
+ []
+
+[5] [6]
+File: ./picture/testresults.eps Graphic file (type eps)
+ <./picture/testresults.eps>
+File: ./picture/world.eps Graphic file (type eps)
+ <./picture/world.eps> [7] [8] [9]
+File: ./picture/Table1.eps Graphic file (type eps)
+
+<./picture/Table1.eps>
+File: ./picture/Table2.eps Graphic file (type eps)
+ <./picture/Table2.eps> [10]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11]
+Overfull \hbox (11.45604pt too wide) in paragraph at lines 385--386
+[][]\T1/ppl/m/n/10.95 What's more, from Fig-ure [][]7[][] we no-tice a sig-nif-
+i-can-t val-ue, that is "De-pen-den-cy ra-tio". Ukraine's
+ []
+
+[12]
+File: ./picture/plot11.eps Graphic file (type eps)
+ <./picture/plot11.eps>
+File: ./picture/plot.eps Graphic file (type eps)
+ <./picture/plot.eps>
+Overfull \hbox (16.0503pt too wide) in paragraph at lines 419--435
+ [][][][] 
+ []
+
+[13]
+File: ./picture/TGB.eps Graphic file (type eps)
+ <./picture/TGB.eps> [14]
+File: ./picture/TGBresults.eps Graphic file (type eps)
+ <./picture/TGBresults.eps>
+File: ./picture/curve.eps Graphic file (type eps)
+ <./picture/curve.eps>
+Overfull \hbox (16.0503pt too wide) in paragraph at lines 497--513
+ [][][][] 
+ []
+
+
+Overfull \hbox (3.24248pt too wide) in paragraph at lines 482--514
+[][]\T1/ppl/m/n/10.95 Applying the new T-G-B mod-el, we get the fol-low-ing out
+-put-s. Fig-ure [][]11[][] (a)(b)(c)demonstrates
+ []
+
+File: ./picture/demand.eps Graphic file (type eps)
+<./picture/demand.eps>
+File: ./picture/yuce.eps Graphic file (type eps)
+ <./picture/yuce.eps> [15] [16]
+File: ./picture/location.eps Graphic file (type eps)
+ <./picture/location.eps>
+File: ./picture/AHP.eps Graphic file (type eps)
+
+<./picture/AHP.eps> [17] [18] [19]
+File: ./picture/piechart.eps Graphic file (type eps)
+ <./picture/piechart.eps> [20]
+File: ./picture/fitting.eps Graphic file (type eps)
+
+<./picture/fitting.eps> [21] [22]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 780.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 783.
+
+("D:\Program Files\CTEX\MiKTeX\tex\latex\psnfss\t1pcr.fd"
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\ann2.m
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <9> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
+ [23] [24])
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\picture.m [25])
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\resmean0.m)
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\GM1GM11.m [26])
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\GM2DGM.m)
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\GM3Verhulst.m [27])
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\grey.m [28])
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\resmean.m)
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\s11.m [29] [30])
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\fitting.m)
+(C:\Users\佳琪\Desktop\MCMTemplate5.01\code\integral.m))
+
+AED: lastpage setting LastPage
+[31]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+ (C:\Users\佳琪\Desktop\MCMTemplate5.01\mcmpaper.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 64.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+
+
+Package rerunfilecheck Warning: File `mcmpaper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `mcmpaper.out':
+(rerunfilecheck)             Before: 6A80A393E7E55226ECD1A31B2AE7311B;9708
+(rerunfilecheck)             After:  BFD23BF258BC9C3AA40B17628667B9CC;2964.
+ ) 
+Here is how much of TeX's memory you used:
+ 9754 strings out of 495355
+ 135261 string characters out of 3183098
+ 367369 words of memory out of 3000000
+ 12673 multiletter control sequences out of 15000+200000
+ 54902 words of font info for 88 fonts, out of 3000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 41i,13n,45p,10050b,2342s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on mcmpaper.dvi (31 pages, 305916 bytes).

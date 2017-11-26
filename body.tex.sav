@@ -1,0 +1,697 @@
+
+%======================问题介绍====================================
+\section{Introduction}
+
+According to the survey conducted by the United Nations, one quarter of the world's population will suffer from water scarcity. Water use has been growing at nearly twice the rate of population over the last century. There's no denying that daily life requires water resources for industrial, agricultural, and residential purposes. Therefore, it is quite necessary and urgent to find out feasible solutions to solve water stress issues.
+
+There are several popular methods to tackle prediction problems. Back Propagation(BP)\cite{1} is an effective method characterized by extensive flexibility self-learning and mapping. It contains knowledge about Artificial Neural Network (ANN) and can approach almost any nonlinear function theoretically and therefore has satisfying results in the field of modeling and prediction of multi-variable nonlinear systems. We utilize this method to directly investigate the internal relationships so as to sheer away from those difficulties that would be met with by other quantization approaches. Hence, Back Propagation lies a solid foundation for researching water resources carrying capacity.
+
+Our group dedicates to establish a model that can both accomplish qualitative and quantitative analysis to give prediction of water stress in 15 years.
+
+\section{Assumptions}
+
+ In order to have a better study on this paper, we simplify our model by the following assumptions:
+\begin{itemize}
+\item
+There are no droughts, floods, earthquakes and other strong natural disasters in 15 years.
+\item
+There is no additional artificial water supply except our determined water strategy intervention in 15 years.
+\item
+The society maintains steadily stable and related social policies are kept the same.
+\item
+Ecological conditions such as weather, climate, hydrology, etc. don't change in 15 years.
+\end{itemize}
+Under the above and basic assumptions, we can set out to construct our model (show our approach in detail).
+
+%=============================问题分析==========================================
+\section{Establishment of Model}
+%==================================模型建立==============================================
+
+In order to depict the ability of of a region to provide clean water to meet the needs of its population, we adopt an idea of water resources carrying capacity\cite{2}. It is a prevalent idea defined as the ability to support social, economic and environmental development based on predictable level of technology and economy in the context of a certain historical stage. It follows the principle of sustainable development, takes the basic ecological need of water into consideration and requires both reasonable and optimal configurations.
+
+\subsection{Principles of Model}
+
+This model comprises of two sub-models. One sub-model is designed for simulation and prediction. It utilizes 3-level BP structure, where the input vectors are main factors $\Delta X$ while the output vector is water resources carrying capacity $\Delta Y$, and nodes of hidden layers are determined by a specific algorithm. The basic idea is to use known inputs $\Delta X_k$ and outputs $\Delta Y_k$ to train this network so as to meet certain accuracy requirements. The well-trained network would be able to predict future. The other sub-model is for comprehensive evaluation by integrating as much information as possible. In this way the outcome can be transformed into an evaluation result, easy for people to understand.
+
+\subsection{Structure of Model}
+(1)Overall Structure
+The overall model is shown as figure \ref{overallstructure}.
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=12cm]{./picture/structure.eps}
+\caption{Structure of water carrying capacity coupling model based on ANN theory} \label{overallstructure}
+\end{figure}
+
+(2)Neural Network Structure
+This model consists of the pre-process of data and the main BP network, shown in figure \ref{BP}. Pre-process section process data by some rules. BP network differs in layers, outputs, and nodes. We construct a 3-level BP network, namely, input level, hidden layer, and output level. The node number m inside this network is determined by the degree of inputs. If the output level degree is n, then we can get to know the node number in the hidden layer is $L=\dfrac{m\times n}{2}$. The hidden layer output is Sigmoid function.
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=10cm]{./picture/BP.eps}
+\caption{ANN topology structure of water carrying capacity model} \label{BP}
+\end{figure}
+
+\subsection{Establishment of Evaluation Indicators System}
+We need to transform water resources carrying capacity into several specific indicators. Due to the fact that there are numerous factors affecting the prediction and evaluation of carrying capacity and therefore it is essential and critical to distinguish key factors from diverse and complicated causes. Generally speaking, indicators can be sundered into three types. One type is related with the physical characters such as quality, quantity, etc., another type is about social interventions such as population, economy and policies. The third type is concerning ecological factors such as climates and forests. Considering these three types, we establish our indicators system shown in figure \ref{System}.
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=12cm]{./picture/System.eps}
+\caption{General evaluation indicators system of water carrying capacity} \label{System}
+\end{figure}
+
+On the foundation of this general evaluation indicators system, we can actually use Principal Component Analysis (PCA) to ascertain specific evaluation indicators for a specific region if we know the comprehensive information. Considering the feasibility of modeling in limited time and the finite archives that we have found, we select $15$ of all factors that we can think of as the basic indicators. Below is the table of selected evaluation indicators (Table \ref{selected}).
+
+\begin{table}
+\centering
+\begin{tabular}{r|l|c}
+  \hline
+   & anual precipitation & 1 \\
+  Quantity of Water & water resources density & 2 \\
+   & available surface water density & 3 \\
+   & renewable water sources per capita & 4 \\
+   \hline
+   & renewable water resources per inhabitant & 5 \\
+   & agricultural withdrawal percentage&6 \\
+  Exploition and Utilization & industrial withdrawal percentage&7 \\
+   & municipalities withdrawal percentage &8 \\
+   & treated municipal wastewater over  &9 \\
+   & produced municipal wastewater & \\
+   \hline
+   & GDP per capita &10 \\
+  Social Econimic Level & population density &11 \\
+   & increase rate of population &12 \\
+    \hline
+   & produced wastewater per GDP &13 \\
+  Ecological Environment & produced wastewater per inhabitant &14 \\
+   & vegetation coverage &15 \\
+  \hline
+\end{tabular}\caption{Selected indicators of water carrying capacity grade evaluation}\label{selected}
+\end{table}
+
+After referring to the national water source evaluation criteria as well as research findings we found and considering the status quo, we divide indicators into 5 levels. Threshold values are demonstrated in table \ref{criteria}.
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  number & equation & Level 1 & Level 2 & Level 3 & Level 4 & Level 5 \\
+  \hline
+  1 & database & $\geq1500$ & $\geq1200$ & $\geq1000$ & $\geq800$ & $<800$ \\
+  \hline
+  2 & $\dfrac{total water resource}{territory area}$ & $\geq80$ & $\geq60$ & $\geq40$ & $\geq20$ & $<20$ \\
+  \hline
+  3 &  $\dfrac{total water resource}{territory area}$ & $\geq80$ & $\geq60$ & $\geq40$ & $\geq20$ & $<20$ \\
+  \hline
+  4 & $\dfrac{total water resource}{population}$ & $\geq5000$ & $\geq4000$ & $\geq3000$ & $\geq2000$ & $<2000$ \\
+  \hline
+  5 & $\dfrac{total water withdrawal}{population}$ & $\geq500$ & $\geq450$ & $\geq350$ & $\geq300$ & $<300$ \\
+  \hline
+  6 & $\dfrac{agricultural withdrawal}{total withdrawal}$ & $\geq40$ & $\geq30$ & $\geq20$ & $\geq10$ & $<10$ \\
+  \hline
+  7 & $\dfrac{industrial withdrawal}{total withdrawal}$ & $\geq40$ & $\geq30$ & $\geq20$ & $\geq10$ & $<10$ \\
+  \hline
+  8 & $\dfrac{municipalities withdrawal}{total withdrawal}$ & $\geq40$ & $\geq30$ & $\geq20$ & $\geq10$ & $<10$ \\
+  \hline
+  9 & $\dfrac{treated municipal wastewater}{produced municipal wastewater}$ & $\geq90$ & $\geq70$ & $\geq50$ & $\geq30$ & $<30$ \\
+  \hline
+  10 & $\dfrac{GDP}{population}$ & $\geq5$ & $\geq3$ & $\geq1$ & $\geq0.6$ & $<0.6$ \\
+  \hline
+  11 & $\dfrac{population}{territory area}$ & $<20$ & $<40$ & $<60$ & $<80$ & $\geq80$ \\
+  \hline
+  12 & database & $<1\%$ & $\geq1\%$ & $\geq3\%$ & $\geq5\%$ & $\geq7\%$  \\
+  \hline
+  13 & $\dfrac{produced wastewater}{GDP}$ & $\leq10$ & $\leq15$ & $\leq25$ & $\leq30$ & $>30$ \\
+  \hline
+  14 & $\dfrac{produced wastewater}{population}$ & $\leq10$ & $\leq15$ & $\leq25$ & $\leq30$ & $>30$ \\
+  \hline
+  15 & $\dfrac{vegetation area}{territory area}$ & $\geq40$ & $\geq30$ & $\geq20$ & $\geq10$ & $<10$ \\
+  \hline
+  others & database & A & B & C & D & E \\
+  \hline
+  \end{tabular}\caption{Thresholds of water resource carrying capacity evaluation indicators}\label{criteria}
+  \end{table}
+
+
+
+
+\section{Validation of Model}
+After establishing our model, the next step is to prove its validity. To best test the model, we decide to use available data about China to validate it because we find statistics relating to China more accessible than those of other regions.
+
+\subsection{Introduction about China}
+China is a sovereign state in East Asia. It is the world's most populous country, with a population of over 1.35 billion. Covering approximately 9.6 million square kilometers, China is the world's second-largest country by land area, and either the third or fourth-largest by total area, depending on the method of measurement.
+
+There are many rivers and lakes in China, but they mainly belong to the Pacific Ocean water system, which determines the basic trend of the water flow to the East. Precipitation varies greatly across China, the general trend is decreasing from the southeast coast to the northwest inland, southeast coastal areas more than $1600$ mm of precipitation, the Northwest has large areas of annual rainfall in $50$ mm or less.China forest area of over square kilometers, the forest coverage rate is $20.36\%$. China's climate is mainly affected by the monsoon circulation, due to the changing terrain and the formation of a complex climate.
+
+2014 China's GDP per capita was 7595 USD, in 2013 China's GDP per capita was 6264 USD, while in 2012 and 2011 were 6995 USD and 5577 USD, respectively. The proportion of Chinese agriculture accounted for $13.1\%$, the proportion of industry accounted for $46.2\%$, the proportion of service industry rose to $40.7\%$.
+
+\subsection{Application and Validation}
+\subsubsection{Data needed in modeling}
+According to China’s statistical archives since 2000, we have got three important factors to be inputs and select another two factors to be outputs to validate this model. What we do is to use statistics from 2000 to 2011 (12 sets training data) to train the network and use this model to “predict” the conditions in the year of 2012 and 2013. By doing so, we can compare these two sets of outputs with real figures so as to make comments on the model’s validity. Table \ref{testi/o} shows the inputs and outputs we selected for China. Meanwhile, Table \ref{testdata} provides details that are needed for validation.
+
+\begin{table}
+\centering
+\begin{tabular}{r|l|c}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+   & Surface Water Resources&$I_1$\\
+  Inputs & Groundwater Resources&$I_2$\\
+   & Duplicated Measurement Between Surface Water and Groundwater&$I_3$\\
+   \hline
+  Outputs & Total Amount of Water Resources&$O_1$\\
+   & Water Resources Per Capita&$O_2$\\
+  \hline
+\end{tabular}\caption{Water carrying capacity forecast indicators of ANN model}\label{testi/o}
+\end{table}
+
+
+\begin{table}
+\centering
+\begin{tabular}{c|ccc|cc}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Year & $I_1$ & $I_2$ & $I_3$ & $O_1$ & $O_2$ \\
+   & $\times10^9 m^3$ & $\times10^9 m^3$ & $\times10^9 m^3$ & $\times10^9 m^3$ & $m^3/person$ \\
+   \hline
+    2000   &   26561.9   &   8501.9   &   7363.0   &   27700.8   &   2193.9   \\
+    2001   &   25933.4   &   8390.1   &   7455.7   &   26867.8   &   2112.5   \\
+    2002   &   27243.3   &   8697.2   &   7679.2   &   28261.3   &   2207.2   \\
+    2003   &   26250.7   &   8299.3   &   7089.9   &   27460.2   &   2131.3   \\
+  2004 & 23126.4 & 7436.3 & 6433.1 & 24129.6 & 1856.3 \\
+  2005 & 26982.4 & 8091.1 & 7020.4 & 28053.1 & 2151.8 \\
+  2006 & 24358.1 & 7642.9 & 6670.8 & 25330.1 & 1932.1 \\
+  2007 & 24242.5 & 7617.2 & 6604.5 & 25255.2 & 1916.3 \\
+  2008 & 26377.0 & 8122.0 & 7064.7 & 27434.3 & 2071.1 \\
+  2009 & 23125.2 & 7267.0 & 6212.1 & 24180.2 & 1816.2 \\
+  2010 & 29797.6 & 8417.0 & 7308.2 & 30906.4 & 2310.4 \\
+  2011 & 22213.6 & 7214.5 & 6171.4 & 23256.7 & 1730.2 \\
+  \hline
+  2012 & 28371.4 & 8416.1 & 7260.6 & 29526.9 & 2186.1 \\
+  2013 & 26839.5 & 8081.1 & 6962.7 & 27957.9 & 2059.7 \\
+  \hline
+\end{tabular}
+\caption{Statistics used to validate the model}\label{testdata}
+\end{table}
+
+\begin{table}
+\centering
+\begin{tabular}{c|ccc}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Year &  & 2012 & \\
+  \hline
+  & Real Values & Estimated Values & Relative Error/\%   \\
+  \hline
+  $O_1$ & 29526.9 & 29568.0 & 0.1\% \\
+  $O_2$ & 2186.1  & 2248.0  & 2.8\% \\
+  \hline
+  Year &  & 2013 & \\
+  \hline
+  & Real Values & Estimated Values & Relative Error/\% \\
+  \hline
+  $O_1$ & 27957.9 & 27977.0 & 0.1\% \\
+  $O_2$ & 2059.7  & 2130.0  & 3.4\% \\
+  \hline
+\end{tabular}\caption{Testing Result of ANN model}\label{testresults}
+\end{table}
+
+\subsubsection{Results}
+After training the network using 12 set data, we get the predicted values. Below demonstrates the comparison between estimated values and real values (Table \ref{testresults}). To see the whole process clearly and vividly, we use Matlab to plot two curves to show the results. The figure is shown in Figure \ref{testresultfigure}.
+
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=12cm]{./picture/testresults.eps}
+\caption{Plot of testing results of ANN model} \label{testresultfigure}
+\end{figure}
+
+We can easily see that the relative errors are all smaller than $5\%$, which indicates a good prediction and the validity of our model. Through this validation test, our model is proved to be effective and accurate to tackle water resource carrying capacity.
+
+
+\section{Investigation}
+By checking the UN water scarcity map (http://www.unep.org/dewa/vitalwater/jpg/0222-waterstress-overuse-EN.jpg), we looked through the world map and finally chose Ukraine whose water resources are heavily exploited (Figure \ref{world}).
+
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=12cm]{./picture/world.eps}
+\caption{Water stress indicator in major basins (Ukraine zoomed in)} \label{world}
+\end{figure}
+
+\subsection{Water Resources in Ukraine}
+
+The country can be divided into seven major river basins, all of them discharging into the Black Sea except the Western Bug which flows towards the Baltic Sea:
+\begin{itemize}
+
+\item \textbf{The Dnipro (called Dnieper in Belarus) basin:}
+covering about 65 percent of the country. The Dnipro river rises in the Russian Federation, then flows into Belarus before entering Ukraine. Its main affluents in Ukraine are: on the left bank the Desna river, which rises in the Russian Federation; and on its right bank the Pripyat river, which comes from Belarus, and the Inhulets, which originates in Ukraine.
+\item \textbf{The Dniester (called Nistru in the Republic of Moldova) basin:}
+covering 12 percent of the country. It flows into the Republic of Moldova before re-entering Ukraine some 50 km before its mouth in the Black Sea.
+\item \textbf{The Danube basin:}
+covering 7 percent of the country. The final 120 km of the Danube river before it reaches the Black Sea form the border between Ukraine and Romania. The Danube is the river with the largest number of riparian countries in the world. Some affluents of the Danube rise in Ukraine in the Carpathian mountains, flow into neighbouring countries, and then join the mainstream of the Danube before its mouth in the Black Sea. In particular, the Cisa (Tisa) river flows out of Ukraine into Hungary, while the Prut river flows into Romania and the Republic of Moldova.
+\item \textbf{The coastal basin:}
+covering 7 percent of the country. It groups all the small rivers that flow directly into the Sea of Azov and the Black Sea, including all the Crimean rivers.
+\item \textbf{The Donets basin:}
+covering 4 percent of the country. It rises in the Russian Federation, and flows through Ukraine for about 450 km in its eastern part before re-entering the Russian Federation.
+\item \textbf{The Southern Bug (Pivdennyi Buh in Ukrainian) basin:}
+covering 3 percent of the country. It is an internal river basin.
+\item \textbf{The Western Bug (Zakhidnyi Buh in Ukrainian) and San basins:}
+covering 2 percent of the country. The Western Bug river rises in Ukraine, flows to the north, forming the border with Poland and then the border between Poland and Belarus, and finally flows into the Narew river in Poland, a tributary of the Vistula river. Like the Western Bug, the San river rises in Ukraine before entering Poland where it joins the Vistula river.
+\end{itemize}
+
+IRSWR are estimated at 50100 million $m^3$/year (Figure \ref{table1}) and incoming RSWR at 120180 million $m^3$. Therefore, the total RSWR are estimated at 170280 million $m^3$/year.
+
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=12cm]{./picture/Table1.eps}
+\caption{Ukraine renewable surface water sources by major river basin} \label{table1}
+\end{figure}
+
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=12cm]{./picture/Table2.eps}
+\caption{Ukraine renewable water sources} \label{table2}
+\end{figure}
+
+Internal renewable groundwater resources are estimated at 22000 million $m^3$/year. Artesian wells are found at an average depth of 100-150 m in the north of the country and at 500-600 m in the south. The overlap between surface and groundwater resources has been estimated at 17000 million $m^3$/year, which brings the total renewable water resources to 175280 million $m^3$ (170280+22000-17000) (Figure \ref{table2}).
+
+\subsection{Water Use in Ukraine}
+Water use details are shown in Table \ref{wateruse}.
+\begin{table}
+\centering
+\begin{tabular}{c|c|c|c|c|c|c|c|c}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Year & 1998 & 1999 & 2000 & 2001 & 2002 & 2003 & 2004 & 2005 \\
+  \hline
+  Total Withdrawal & 190.27 & 197.48 & 182.82 & 175.77 & 162.99 & 150.39 & 146.94 & 150.83 \\
+  \hline
+  Total comsumption & 139.35 & 144.68 & 132.22 & 124.82 & 119.01 & 114.03 & 98.27 & 98.74 \\
+  Municipalities & 34.81 & 34.59 & 33.00 & 34.21 & 33.50 & 32.50 & 30.82 & 30.36 \\
+  Industrial & 76.52 & 71.00 & 67.26 & 64.89 & 60.54 & 55.28 & 51.07 & 51.27 \\
+  Agricultural & 37.02 & 39.09 & 31.96 & 25.77 & 24.97 & 26.25 & 16.38 & 17.11 \\
+  \hline
+\end{tabular}\caption{Ukraine water use in 1998-2005 (unit:$\times 10^8 m^3$)}\label{wateruse}
+\end{table}
+
+
+\subsection{Causes of Water Scarcity}
+After analysing available data, we draw a conclusion that Ukraine mainly suffers from physical scarcity rather than economic scarcity.
+\subsubsection{Physical Scarcity}
+
+Reasons for physical scarcity mainly contains the following environmental drivers:
+\begin{itemize}
+\item water resources per capita shortage
+\item water dependence
+\item uneven temporal and spatial distribution of water resources
+\end{itemize}
+
+In 2005, water resources per capita in Ukraine is about 1100 $m^3$ and less than 1700 $m^3$, which is the international water shortage warning line standard. Another fact that needs special attention is that the European average figure is 9089 $m^3$, way higher than Ukraine. Therefore, this bare fact implies that Ukraine belongs to water shortage countries.
+
+What's more, from Figure \ref{table2} we notice a significant value, that is "Dependency ratio". Ukraine's dependency ratio is 69\%. This figure illustrates to what extent this country relies on water inflows from contiguous countries. This indicates that Ukraine suffers from water dependence, which can also answer to the water stress issue.
+
+Besides, temporal and spatial distribution of water resources in Ukraine is quite uneven. Generally speaking, water resources are abundant in the north and northwest while water resources are scarce in the south. Additionally, water mainly flows in spring, accounting for roughly 60\% and 90\% of the annual water resources in northern and southern areas respectively.
+
+As for economic scarcity, based on the statistics, people in Ukraine have convenient access to clean water (access intex is 96\% for total population, shown in Figure \ref{plot11}).Hence, we speculate that the infrastructure to provide water in Ukraine is, comparatively, comprehensively constructed.
+
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=12cm]{./picture/plot11.eps}
+\caption{Ukraine water consumption in 1998-2005} \label{plot11}
+\end{figure}
+
+\subsubsection{Social Factors}
+\begin{itemize}
+\item excessive consumption per capita
+\item water-consuming industrial structure
+\end{itemize}
+
+According to the data that we have found, the daily water consumption per capita in Ukraine is as high as 320 liters while the average level in western Europe is 100-200 liters. Figures are even higher in busy cities like Odessa and Kiev. This value shows that inhabitants in Ukraine use water extravagantly and lack of water saving consciousness.
+
+Additionally, figures about withdrawal in three sections conspicuously show that industrial withdrawal is always the dominant consumers (shown in Figure \ref{plot})and it has similar trend with total withdrawal curve. Hence, we can conclude that industrial withdrawal affects total withdrawal the most. When we compare this ratio with other countries, we find that Ukraine's percentage is relatively bigger, indicating the many industries in Ukraine is water-consuming.
+
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=10cm]{./picture/plot.eps}
+\caption{Ukraine water consumption in 1998-2005} \label{plot}
+\end{figure}
+
+\section{Model Application to Ukraine}
+Based on the data that we gathered about Ukraine, we found 8 different types of statistics. To better understand the internal relationships amongst these figures, we apply Principal Component Analysis(PCA) to conduct dynamic comprehensive evaluations. Suppose $X_1$:Total withdrawal, $X_2$:GDP, $X_3$:Population, $X_4$:Wastewater, $X_5$:Industrial use, $X_6$:Hydroelectricity, $X_7$:Agricultural use, $X_8$:Municipalities use. Data are shown in Table \ref{Ukrainedata}.
+\begin{table}
+\centering
+\begin{tabular}{c|cccccccc}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Year & $X_1$ & $X_2$ & $X_3$ & $X_4$ & $X_5$ & $X_6$ & $X_7$ & $X_8$ \\
+   & $\times 10^8 m^3$ & $\times 10^8 USD$ & $\times 10^6$ & $\times 10^8 m^3$ & \% & \% & $\times 10^8 m^3$ & $\times 10^8 m^3$ \\
+   \hline
+  1998 & 190.27 & 418.83 & 50.28 & 50.92 & 54.91 & 9.3 & 37.02 & 34.81  \\
+  1999 & 197.48 & 315.81 & 49.89 & 52.80 & 49.07 & 8.7 & 39.09 & 34.59  \\
+  2000 & 182.82 & 312.62 & 49.47 & 52.60 & 50.87 & 6.4 & 31.96 & 33.00  \\
+  2001 & 175.77 & 380.09 & 48.67 & 50.95 & 51.99 & 6.9 & 25.77 & 34.21  \\
+  2002 & 162.99 & 423.93 & 48.23 & 43.98 & 50.87 & 5.6 & 24.97 & 33.50  \\
+  2003 & 150.39 & 501.33 & 47.79 & 36.36 & 48.48 & 5.0 & 26.25 & 32.50  \\
+  2004 & 146.94 & 648.81 & 47.46 & 48.67 & 51.97 & 6.6 & 16.38 & 30.82  \\
+  2005 & 150.83 & 828.81 & 47.09 & 52.09 & 51.92 & 6.5 & 17.11 & 30.36  \\
+  \hline
+\end{tabular}\caption{Statistics of water resources and economy of Ukraine}\label{Ukrainedata}
+\end{table}
+After using SPSS 22 to process the data, we get correlation coefficients matrix of driving force factors (Table \ref{correlation}). We can conclude from Table \ref{correlation} that selected factors are correlated, which is the vital basis to continue using PCA.
+\begin{table}
+\centering
+\begin{tabular}{c|cccccccc}
+  \hline
+   & $X_1$ & $X_2$ & $X_3$ & $X_4$ & $X_5$ & $X_6$ & $X_7$ & $X_8$ \\
+  \hline
+  $X_1$ & 1 &  &  &  &  &  &  &  \\
+  $X_1$ & -0.779 & 1 &  &  &  &  &  &  \\
+  $X_1$ & 0.961 & -0.809 & 1 &  &  &  &  &  \\
+  $X_1$ & 0.550 & -0.072 & 0.411 & 1 &  &  &  &  \\
+  $X_1$ & 0.764 & -0.285 & 0.745 & 0.671 & 1 &  &  &  \\
+  $X_1$ & 0.922 & -0.811 & 0.950 & 0.223 & 0.643 & 1 &  &  \\
+  $X_1$ & 0.849 & -0.874 & 0.867 & 0.122 & 0.542 & 0.868 & 1 &  \\
+  $X_1$ & 0.957 & -0.789 & 0.985 & 0.403 & 0.745 & 0.930 & 0.908 & 1 \\
+  \hline
+\end{tabular}\caption{Correlation coefficients matrix of driving force factors}\label{correlation}
+\end{table}
+Table \ref{eigenvalues} shows that first two dominant components have contributed 92.766\%. Therefore, these two components can effectively reflect the water resource carrying capacity. Besides, from component matrix in Table \ref{copomentmatrix}, we know that the first dominant component is positively related to $X_1$, $X_3$, $X_4$, $X_5$, $X_6$, $X_7$, $X_8$ while it is negatively related to $X_2$. To recap, industry and population are major factors.
+\begin{table}
+\centering
+\begin{tabular}{c|c|c|c}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Component & Total & \% of Variance & Cumulative \% \\
+  \hline
+  1 & 6.072 & 75.900 & 75.900 \\
+  2 & 1.349 & 16.866 & 92.766 \\
+  \hline
+\end{tabular}\caption{Eigen values and squared loading of the principal components}\label{eigenvalues}
+\end{table}
+\begin{table}
+\centering
+\begin{tabular}{c|cccccccc}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Component & $X_1$ & $X_2$ & $X_3$ & $X_4$ & $X_5$ & $X_6$ & $X_7$ & $X_8$ \\
+  \hline
+  1 & 0.984 & -0.818 & 0.988 & 0.441 & 0.759 & 0.946 & 0.905 & 0.987 \\
+  2 & 0.102 & 0.466 & -0.014 & 0.833 & 0.539 & -0.180 & -0.323 & -0.020 \\
+  \hline
+\end{tabular}\caption{Component matrix}\label{copomentmatrix}
+\end{table}
+Table \ref{scores} shows that $F_1$ and $F_2$ are scores of dominant component, F refers to the final score. The higher the scores is, the better the water resources carrying capacity will be, and vice versa. The ranks demonstrate that the overall trend is getting worse; however, since 2004, situations started to bounce back.
+\begin{table}
+\centering
+\begin{tabular}{c|ccc|c}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  Year & $F_1$ & $F_2$ & F & Rank \\
+   \hline
+  1998 & 1.27993& 0.43103& 1.044164& 1\\
+  1999 & 1.25846& 0.30825& 1.007161& 2\\
+  2000 & 0.54080& -0.5651& 0.315157& 3\\
+  2001 & 0.29376& -0.5776& 0.125546& 4\\
+  2002& -0.26058& -1.00844& -0.36786& 5\\
+  2003& -0.78978& -1.76171& -0.89657& 8\\
+  2004& -1.08912& 0.69091& -0.71011& 7 \\
+  2005& -1.23347& 1.45422& -0.69093& 6 \\
+  \hline
+\end{tabular}\caption{Scores of water resources carrying capacity in 1998-2005}\label{scores}
+\end{table}
+
+\subsection{Improved Model}
+
+\subsection{Prediction results}
+
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=14cm]{./picture/demand.eps}
+\caption{Ukraine projected change in water demand} \label{demand}
+\end{figure}
+\begin{figure}[h]
+\small
+\centering
+\includegraphics[width=14cm]{./picture/supply.eps}
+\caption{Ukraine projected change in water supply} \label{supply}
+\end{figure}
+
+
+\section{Intervention plan}
+
+There are some feasible approaches to tackle the water stress that would occur in Ukraine. Based on the fact that Ukraine is a coastal country and southern places suffer more from water stress, construction of desalination plants is an ideal approach. In recent years people have already acquired many novel and innovative methods to implement desalination, therefore this method is ensured by technology.
+\subsection{AHP modeling}
+By searching for geological information combined with our analysis, we select 4 potential locations to construct a desalination: Odesa, Kherson, Simferopol, and Berdyansk. These four places are marked in red dots in the following figure \ref{location}.
+\begin{figure}
+  \centering
+  \includegraphics[width=12cm]{./picture/location.eps}\\
+  \caption{4 potential locations of desalination plants}\label{location}
+\end{figure}
+In order to determine the location, we apply Analytic Hierarchy Process(AHP). AHP is a structured technique for organizing and analyzing complex decisions, based on mathematics and psychology. It has particular application in group decision making\cite{Saaty}, and is used around the world in a wide variety of decision situations.
+
+We establish our AHP hierarchy shown as figure \ref{AHP}. To obtain the pairwise comparison matrix, we need to compare the influence of $C_1$,$C_2$,...,$C_n$ to the upper level. We follow the comparison scales proposed by Saaty, namely, to use 1-9 to depict the relative influence. Detailed information is shown in Table \ref{scale}.
+\begin{figure}
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=12cm]{./picture/AHP.eps}\\
+  \caption{AHP hierarchy}\label{AHP}
+\end{figure}
+
+\begin{table}[]
+\centering
+\noindent \caption{1-9 scale$a_ij$ definition \hskip
+2.5in }\label{scale}
+\begin{tabular}[ht]{cl}
+   \hline
+  Scale & Definition\\
+   \hline
+  1 & $C_i$ and $C_j$ have identical influence\\
+  3 & $C_i$ has a little bigger influence than $C_j$ \\
+  5 & $C_i$ has greater influence than $C_j$\\
+  7 & $C_i$ has an evidently greater influence than $C_j$ \\
+  9 & $C_i$ has a dominant influence compared to $C_j$ \\
+  2,4,6,8 & the influence of $C_i$ over $C_j$ is between the stated scale \\
+  1,1/2,...1/9 & the influence of $C_i$ over $C_j$ is the opposite number of stated scale \\
+    \hline
+\end{tabular}
+\end{table}
+
+Considering the status quo, we define pairwise matrix $A$.
+\begin{equation}
+A=\left( {\begin{array}{cccc}
+    1 & 3 & \dfrac{1}{3} & 2 \\[2ex]
+    \dfrac{1}{3} & 1 & \dfrac{1}{9} & 1 \\[2ex]
+    3 & 9 & 1 & 6 \\
+    \dfrac{1}{2} & 1 & \dfrac{1}{5} & 1 \\[2ex]
+  \end{array}}
+\right)
+\end{equation}
+
+Again, we adopt consistency check approach designed by Saaty, namely \textbf{coincidence indicator}
+\begin{equation}
+\textit{CI}=\dfrac{\lambda-n}{n-1}\label{CI}
+\end{equation}
+We can conclude that $A$ is a consistent matrix if \textit{CI}=0; the greater \textit{CI} is, the more likely $A$ to be inconsistent. For the purpose of evaluating the tolerance of inconsistency, we also need to find another criterium to judge \textit{CI}. Saaty introduced \textbf{random indicator}. The process to calculate is to randomly construct matrix $A^\prime$, and then calculate \textit{CI}. Finally the mean value of these \textit{CI} is random indicator. The \textit{RI} table is shown as Table \ref{RI}.
+
+\begin{table}\label{RI}
+\centering
+\begin{tabular}{c|ccccccccccc}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  n & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 \\
+  \hline
+  \textit{RI} & 0 & 0 & 0.58 & 0.90 & 1.12 & 1.24 & 1.32 & 1.41 & 1.45 & 1.49 & 1.51 \\
+  \hline
+\end{tabular}\caption{\textit{RI} values versus n}
+\end{table}
+
+It is clearly seen that $\mbox{\textit{RI}}=0$ when $n=1,2$. This is owing to rank 1 or 2 matrix is always consistent. As for $n\geq 3$, the \textbf{coincidence ratio} is defined as
+\begin{equation}\label{CR}
+\mbox{\textit{CR}}=\dfrac{\mbox{\textit{CI}}}{\mbox{\textit{RI}}}
+\end{equation}
+If $\mbox{\textit{CR}}<0.1$, we say it passes consistency check and this matrix can be applied.
+
+According to our matrix, we calculate the eigen value and eigen vector by Matlab:
+\begin{equation}
+\lambda=4.0752
+\end{equation}
+\begin{equation}
+\textbf{w}=(0.2061,0.0768,0.6184,0.0987)^\prime
+\end{equation}\label{vector1}
+
+Applying equation \ref{CI}, $\mbox{\textit{CI}}= \dfrac{0.0752}{3}=0.0251$. We can find \textit{RI}=0.9 from Table \ref{scale}. Hence, follow equation \ref{CR} we get $\mbox{\textit{CR}}=\dfrac{0.0251}{0.9}=0.0279<0.1$. It passes the consistency check.
+
+Next thing, determine the priority factors. In this cite selection issue, we have already got the ratio vector from criteria level to goal level. We need the factors from alternatives level to criteria level. Based on geography of Ukraine, we determine the following matrixes.
+\begin{equation}
+B_1=\left(\begin{array}{cccc}
+        1 & \dfrac{1}{2} & 3 & 1 \\[2ex]
+        2 & 1 & 6 & 2 \\
+        \dfrac{1}{3} & \dfrac{1}{6} & 1 & \dfrac{1}{3} \\[2ex]
+        1 & \dfrac{1}{2} & 3 & 1
+        \end{array}\right),
+B_2=\left(
+      \begin{array}{cccc}
+        1 & 1 & 3 & 2 \\[2ex]
+        1 & 1 & 2 & 1 \\
+        \dfrac{1}{3} & \dfrac{1}{2} & 1 & \dfrac{1}{2} \\[2ex]
+        1 & 1 & 2 & 1 \\
+      \end{array}
+    \right),
+\end{equation}
+
+\begin{equation}
+B_3=\left(
+      \begin{array}{cccc}
+        1 & 1 & 2 & 2 \\[2ex]
+        1 & 1 & 2 & 1 \\
+        \dfrac{1}{2} & \dfrac{1}{2} & 1 & 1 \\[2ex]
+        \dfrac{1}{2} & \dfrac{1}{2} & 1 & 1 \\
+      \end{array}
+    \right),
+B_4=\left(
+      \begin{array}{cccc}
+        1 & 2 & 3 & 3 \\[2ex]
+        \dfrac{1}{2} & 1 & 2 & 2 \\
+        \dfrac{1}{3} & \dfrac{1}{2} & 1 & 1 \\[2ex]
+        \dfrac{1}{3} & \dfrac{1}{2} & 1 & 1 \\
+      \end{array}
+    \right)
+\end{equation}
+where $b_ij$ in $B_k(k=1,2,3,4)$ relates to the priority scale between $A_i$ and $A_j$ considering criterium $C_k$. Again, we calculate the ratio vectors and eigen values shown in Table
+
+\begin{table}
+\centering
+\begin{tabular}{c|cccc}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  k & 1 & 2 & 3 & 4  \\
+  \hline
+  & 0.2308 & 0.3541 & 0.3483 & 0.4554  \\
+  $w_k$ & 0.4615 & 0.2639 & 0.3033 & 0.2628  \\
+   & 0.0769 & 0.1180 & 0.1742 & 0.1409  \\
+   & 0.2308 & 0.2639 & 0.1742 & 0.1409  \\
+  \hline
+  $\lambda_k$ & 4 & 4.2361 & 3.8708 & 4.0104  \\
+  \hline
+  $\mbox{\textit{CI}}_k$ &0&0.0787&0.0431&0.0035 \\
+  \hline
+\end{tabular}\caption{Alternative level calculation results}\label{vector2}
+\end{table}
+
+What needs to be clarified is that all the \textit{CI}s have passed the check.
+Lastly, we combine all of the priority factors to achieve the final priority index, which is simply the product of two priority vectors: \eqref{vector1} and Table \ref{vector2}. By multiplying these two vectors we get
+\begin{equation}
+\mbox{\textbf{$w_f$}}=[0.3351,0.3289,0.1465,0.1895]^\prime
+\end{equation}
+We can tell from the results that we pick Odessa to be the best cite to build desalination plants.
+
+\subsection{Intervention Advantages and Weaknesses}
+Like any model,the one present above has its strengths and weaknesses. Some of the major points are presented below.
+\subsubsection{Advantages}
+\begin{itemize}
+\item \textbf{Alleviating the water stress in the south}\\
+One of the most significant strengthes is to drastically alleviate the water stress issue by providing the country more fresh water from Black sea. Since the South is the most serious place in Ukraine, and by establishing a desalination plant here in a coastal city, people can utilize water from the ocean, taking advantage of technology to transform salty water to edible clean water. This method can increase total available water resources.
+\item \textbf{Renewable}\\
+The raw materials of desalination plants are mainly seawater which is renewable. This coincides with the idea of sustainable development.
+\item \textbf{Providing more employment opportunities}\\
+The plan to establish desalination plants can produce many employment opportunities. Workers, constructors, technical workers, supervisors, etc. are abundantly needed in the region. Therefore, it can also alleviate the social instability caused by high unemployment rate.
+\end{itemize}
+
+\subsubsection{Weaknesses}
+\begin{itemize}
+\item \textbf{Gigantic initial investments}\\
+Establishing desalination plants requires both advanced technology and gigantic capital.
+\item \textbf{Rising price of water}\\
+Compared to the normal water resources, water from desalination needs more efforts and therefore, has higher prices. To maintain the operation of plants, the price of water will rise which may lead to indignation of inhabitants.
+\item \textbf{Possible negative effects on the ocean}\\
+Desalination can have some side effects on the ocean ecological system. Those substances in the seawater will not disappear and since people only take water from the ocean, it may cause the imbalance of ion density.
+\end{itemize}
+
+
+
+\section{}
+
+
+
+
+%===============================模型结果============================================
+\section{The Model Results}
+Although Mr. Gore has expressed concerns to some associates about
+the damage a brokered convention could cause, several associates
+said he was hopeful that one candidate would soon break through,
+sparing the party such an outcome. He told a close friend recently
+that his decision not to endorse “feels like the right thing”
+and that he remained optimistic the race “is going to tip at some
+point,” the friend said.
+
+
+%========================模型的实效分析（适应性说明）=============================
+
+\section{Validating the Model}%确认模型，使之合理。
+
+
+\section{Conclusions}
+
+\section{A Summary}
+
+%================================总体评价==============================
+%======================================================================
+\section{Strengths and weaknesses}
+Like any model,the one present above has its strengths and
+weaknesses. Some of the major points are presented below.
+
+%============================模型=优点====================================
+\subsection{Strengths}
+\begin{itemize}
+\item \textbf{Applies widely}\\
+This  system can be used for many types of airplanes, and it also
+solves the interference during  the procedure of the boarding
+airplane,as described above we can get to the  optimization
+boarding time.We also know that all the service is automate.
+\item \textbf{Improve the quality of the airport service}\\
+Balancing the cost of the cost and the benefit, it will bring in
+more convenient  for airport and passengers.It also saves many
+human resources for the airline. \item \textbf{}
+\end{itemize}
+
+
+
+
+\begin{thebibliography}{99}
+%\addcontentsline{toc}{section}{References}
+\bibitem{1}Shashi Sathyanarayana, "A Gentle Introduction to Backpropagation", 2014.
+\bibitem{2}Wang, Shuo, et al. "Multi-scale analysis of the water resources carrying capacity of the Liaohe Basin based on ecological footprints.", Journal of Cleaner Production, 2013:158–166.
+\bibitem{5}
+\bibitem{3}http://www.latexstudio.net/
+\bibitem{4}http://www.chinatex.org/
+\end{thebibliography}
+
+%====================附录导入程序代码==========================================
+\begin{appendices}
+    %\renewcommand{\thesection}{\Alph{chapter}.}
+
+\section{First appendix}
+
+some text...
+
+
+Here are simulation programmes we used in our model as follow.\\
+
+
+\textbf{\textcolor[rgb]{0.98,0.00,0.00}{Input matlab source:}}
+\lstinputlisting[language=Matlab]{./code/matlab1.m}
+
+
+      \section{Second appendix}
+
+    some more text\textcolor[rgb]{0.98,0.00,0.00}{\textbf{Input C++ source:}}
+\lstinputlisting[language=C++]{./code/sudoku.cpp}
+
+    \end{appendices}
